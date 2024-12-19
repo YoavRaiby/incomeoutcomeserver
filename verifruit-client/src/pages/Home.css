@@ -1,0 +1,215 @@
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(to bottom, #9fb2f1, #df3731); /* מעבר צבע רקע */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #003366;
+}
+
+.hero-content {
+  padding: 2rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.hero-description {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #004080;
+}
+
+.hero-button {
+  background-color: #38a169;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #2f855a;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #df3731, #9fb2f1); /* מעבר צבע */
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  padding: 2rem;
+}
+
+.about-text h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #003366;
+}
+
+.about-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* כרטיסים אחד מתחת לשני */
+  gap: 2rem;
+}
+
+.about-card {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.about-card p {
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+
+/* Carousel Section */
+.carousel-section {
+  padding: 4rem 0;
+  background: #edf2f7;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-size: 2.5rem;
+  color: #2f855a;
+  margin-bottom: 2rem;
+}
+
+.carousel-section img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* מסכים בינוניים - טאבלטים */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+  }
+
+  .hero-button {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-card p {
+    font-size: 1rem;
+  }
+}
+
+/* מסכים קטנים - טלפונים */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .about-section {
+    flex-direction: column; /* כותרת וכרטיסים אחד מתחת לשני */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-cards {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .carousel-section img {
+    width: 100%; /* תמונה במלוא הרוחב */
+  }
+}
+
+/* מסכים קטנים במיוחד */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-card img {
+    width: 50px; /* הקטנת גודל התמונות */
+  }
+
+  .about-card h3 {
+    font-size: 1.3rem;
+  }
+}
